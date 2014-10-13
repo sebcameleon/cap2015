@@ -66,7 +66,7 @@
           </article>
 
           <article class="col-sm-4">
-            <a rel="gallery-1" href="img/slides/curatif/02-1.png" class="swipebox" title=" <h1><img src='img/curatif02.png'/></h1> <p> Une gamme antibiotique <br/> adaptée aux <br/> <b>enjeux de demain</b> </p>">
+            <a rel="gallery-1" href="img/slides/curatif/02-1.gif" class="swipebox" title=" <h1><img src='img/curatif02.png'/></h1> <p> Une gamme antibiotique <br/> adaptée aux <br/> <b>enjeux de demain</b> </p>">
             <img src="img/curatif02.png" alt="..." class="img-circle curatifBG" />
               <p>Une gamme antibiotique<br/>
               adaptée aux<br/>
@@ -103,12 +103,15 @@
 
  
  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
-      poster="img/slides/curatif/01/oceans-clip.png"
+      poster="img/slides/curatif/01/Industrial-Movie_03.jpg"
       data-setup="{}">
-    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+    <!--<source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
     <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
     <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
-    <!-- <source src="http://showroom.cameleons.com/virbac/cap2015/dev/img/slides/curatif/01/oceans-clip.ogv" type='video/ogg' /> -->
+    <source src="http://showroom.cameleons.com/virbac/cap2015/dev/img/slides/curatif/01/Industrial-Movie_03.mp4" type='video/mp4' /> -->
+    <source src="img/slides/curatif/01/Industrial-Movie_03.mp4" type='video/mp4' /> 
+    <source src="img/slides/curatif/01/Industrial-Movie_03.webm" type='video/webm' />
+    <source src="img/slides/curatif/01/Industrial-Movie_03.ogv" type='video/ogg' />
 
     
     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
@@ -137,6 +140,7 @@
 
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.swipebox.js"></script>
+
   <script src="video-js/video.js"></script>
 
 
@@ -152,11 +156,15 @@
 
   $( ".btnVideo" ).click(function() {
      $( "#video-overlay" ).show();
+     $("video").get(0).play();
   });
 
   $( ".fermerVideo" ).click(function() {
      $( "#video-overlay" ).hide();
+     $("video").get(0).pause();
   });
+
+
 
 
 
