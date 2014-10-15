@@ -675,7 +675,7 @@
 			isVideo : function ( src ) {
 
 				if ( src ) {
-					if ( src.match( /Movie/) || src.match( /carto/) || src.match( /vimeo\.com\/([0-9]*)/ ) || src.match( /youtube\.com\/watch\?v=([a-zA-Z0-9\-_]+)/) || src.match( /vimeo\.com\/([0-9]*)/ ) || src.match( /youtu\.be\/([a-zA-Z0-9\-_]+)/ ) ) {
+					if ( src.match( /ideo/) || src.match( /carto/) || src.match( /vimeo\.com\/([0-9]*)/ ) || src.match( /youtube\.com\/watch\?v=([a-zA-Z0-9\-_]+)/) || src.match( /vimeo\.com\/([0-9]*)/ ) || src.match( /youtu\.be\/([a-zA-Z0-9\-_]+)/ ) ) {
 						return true;
 					}
 
@@ -696,7 +696,7 @@
 					youtubeUrl = url.match( /watch\?v=([a-zA-Z0-9\-_]+)/ ),
 					youtubeShortUrl = url.match(/youtu\.be\/([a-zA-Z0-9\-_]+)/),
 					vimeoUrl = url.match( /vimeo\.com\/([0-9]*)/ );
-					MovieUrl = url.match( /Movie/);
+					MovieUrl = url.match( /ideo/);
 					CartoUrl = url.match( /carto/);
 					
 
@@ -714,14 +714,15 @@
 
 				} else if (MovieUrl) {
 					// iframe = '<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="800" height="450" poster="' + url + '.jpg" data-setup="{\'autoplay\': false}"> <source src="' + url + '.mp4" type="video/mp4" /> <source src="' + url + '.webm" type="video/webm" />  <source src="' + url + '.ogv" type="video/ogg" /><p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>  </video>';
-					iframe = '<iframe width="800" height="450" src="video.html" frameborder="0" allowfullscreen ALLOWTRANSPARENCY="true"> </iframe>';
+					iframe = '<iframe id="movieFrame" width="800" height="450" src="video.html" frameborder="0" allowfullscreen ALLOWTRANSPARENCY="true" scrolling="no"> </iframe>';
 				} else if (CartoUrl) {
-					iframe = '<iframe width="760" height="500" src="' + url + '" frameborder="0" allowfullscreen ALLOWTRANSPARENCY="true"> </iframe>';
+					iframe = '<iframe width="760" height="500" src="' + url + '" frameborder="0" allowfullscreen ALLOWTRANSPARENCY="true" scrolling="no"> </iframe>';
 				} else {
-					iframe = '<iframe width="560" height="315" src="' + url + '" frameborder="0" allowfullscreen></iframe>';
+					iframe = '<iframe width="560" height="315" src="' + url + '" frameborder="0" allowfullscreen scrolling="no"></iframe>';
 				}
 
-				return '<div class="swipebox-video-container" style="max-width:' + plugin.settings.videomaxWidth + 'px"><div class="swipebox-video">'+iframe+'</div></div>';
+				return '<div class="swipebox-video-container" style="max-width:906px"><div class="swipebox-video">'+iframe+'</div></div>';
+				// return '<div class="swipebox-video-container" style="max-width:' + plugin.settings.videomaxWidth + 'px"><div class="swipebox-video">'+iframe+'</div></div>';
 			},
 			
 			/**
