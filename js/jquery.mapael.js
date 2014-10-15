@@ -537,6 +537,7 @@
 						, scale * (legendOptions.slices[i].size)
 						, scale * (legendOptions.slices[i].size)
 					).attr(legendOptions.slices[i].attrs);
+
 				} else {
 					elem = paper.circle(
 						legendOptions.marginLeft + scale * (legendOptions.slices[i].size / 2)
@@ -601,8 +602,9 @@
 		// only for VML render because text.getBBox() returns wrong values on IE6/7
 		if (Raphael.type != 'SVG' && legendOptions.VMLWidth) 
 			width = legendOptions.VMLWidth;
-		
+
 		paper.setSize(width, height)
+
 		return paper;
 	}
 	
@@ -749,13 +751,14 @@
 			}
 			, defaultArea : {
 				attrs : {
-					fill : "#343434"
-					, stroke : "#5d5d5d"
+					/*fill : "#343434"
+					, */stroke : "#5d5d5d"
 					, "stroke-width" : 1
 					, "stroke-linejoin" : "round"
 				}
 				, attrsHover : {
-					fill : "#f38a03"
+					fill : "#ffffff"
+					/*, stroke : "#cccccc"*/
 					, animDuration : 300
 				}
 				, text : {
@@ -815,12 +818,12 @@
 				, marginBottom : 15
 				, titleAttrs : {
 					"font-size" : 18
-					, fill : "#343434"
+					, fill : "#ffffff"
 					, "text-anchor" : "start"
 				}
 				, labelAttrs : {
 					"font-size" : 15
-					, fill : "#343434"
+					, fill : "#ffffff"
 					, "text-anchor" : "start"
 				}
 				, labelAttrsHover : {

@@ -27,17 +27,17 @@
   <link rel="stylesheet" href="css/swipebox.css">
   <link href="video-js/video-js.css" rel="stylesheet" type="text/css">
 
-
-
-<script type="text/javascript">
- if (window!= window.top) { // inside iframe
-   // ordocument.body.style.backgroundColor = 'transparent';
-    document.body.style.background = 'none';
- }
-</script>
-
-
-
+  <style type="text/css">
+    
+    .mapTooltip {
+color: #fff;
+    max-width: 200px;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    z-index: 1000;
+    }
+  </style>
 
 </head>
 
@@ -64,33 +64,57 @@
 
 
     <div class="site-wrapper-inner">
-          <!--
+
           <article>
             <a class="btnVideo" href="#"><img src="img/hommes01.png" alt="..." class="img-circle hommesBG">
             <p>Carte intéractive</p></a>
-          </article> 
-        -->
-
-          <article>
-            <a class="swipebox-video" rel="gallery1" href="carto.html"> <img src="img/hommes01.png" alt="..." class="img-circle hommesBG">
-            <p>Carte interactive</p></a> 
           </article>
-
-          <article class="col-sm-4">
-            <a class="swipebox-video" rel="gallery0" href="img/slides/curatif/01/Industrial-Movie_03" title="<h1><img src='img/curatif01.png'></h1> <p>Virbac a investi <br/><b>28 millions d'euros</b><br/>dans un nouveau site de production </a> </p>">
-            <img src="img/curatif01.png" alt="..." class="img-circle curatifBG">
-            <p>Virbac a investi <br/>
-            <b>28 millions d'euros</b><br/>
-            dans un nouveau site<br/> 
-            de production </p></a> 
-          </article>
-
 
 
     </div>
 
 
   </div>
+
+
+<div id="video-overlay">
+<div class="container">
+    <div class="maparea4">
+      <div class="map">
+        <span>Alternative content for the map</span>
+      </div>
+      <div class="areaLegend">
+        <span>Alternative content for the legend</span>
+      </div>
+    </div>
+</div>
+      <a class="fermerVideo" style="background-image: url("img/swipebox/icons.png");"></a>
+
+</div>
+
+
+
+<!-- video 
+<div id="video-overlay" style="width: 100%; height:100%; display:none">
+  <div id="video-container">
+
+ 
+ <div class="container">
+    <div class="maparea4">
+      <div class="map">
+        <span>Alternative content for the map</span>
+      </div>
+      <div class="areaLegend">
+        <span>Alternative content for the legend</span>
+      </div>
+    </div>
+</div>
+
+
+      <a class="fermerVideo" style="background-image: url("img/swipebox/icons.png");"></a>
+
+  </div>
+</div>-->
 
 
 
@@ -117,7 +141,6 @@
   ;( function( $ ) {
 
     $( '.swipebox' ).swipebox();
-    $( '.swipebox-video' ).swipebox();
 
   } )( jQuery );
 
