@@ -134,6 +134,7 @@ html.swipebox-html.swipebox-touch {
   transform: translate3d(0, 50px, 0);*/
   -webkit-transform: translate3d(0, -110px, 0);
   transform: translate3d(0, -110px, 0);
+  z-index: 1000;
 }
 
 #swipebox-title {

@@ -157,6 +157,7 @@ body {
 
 /*COULEURS */
 .virbac, .virbac a  { color: #fff;} 
+.virbacMentions, .virbacMentions a  { color: #004c99;} 
 .curatif, .curatif a { color: #99cc00; }
 .preventif, .preventif a{ color: #fd9a00; }
 .services, .services a { color: #9c60b8; }
