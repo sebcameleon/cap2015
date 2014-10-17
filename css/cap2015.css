@@ -157,7 +157,7 @@ body {
 
 /*COULEURS */
 .virbac, .virbac a  { color: #fff;} 
-.curatif, .curatif a { color: #27b29d; }
+.curatif, .curatif a { color: #99cc00; }
 .preventif, .preventif a{ color: #fd9a00; }
 .services, .services a { color: #9c60b8; }
 .produits, .produits a { color: #419cc9; }
@@ -169,7 +169,7 @@ body {
 
 /* background CATEGORIES */
 .virbacBG, .virbacItem  { background: #004c99;}
-.curatifBG, .curatifItem  {  background-color: #27b29d; }
+.curatifBG, .curatifItem  {  background-color: #99cc00; }
 .preventifBG, .preventifItem  { background-color: #fd9a00; }
 .servicesBG, .servicesItem { background-color: #9c60b8; }
 .produitsBG, .produitsItem { background-color: #419cc9; }
@@ -212,6 +212,28 @@ article .img-circle {
   margin: 10px;
 }
 
+
+
+
+
+#swipebox-top-bar  table.reglementaire {
+  font-size: 14px;
+  width: 100%;
+}
+
+#swipebox-top-bar table td { text-align: center; margin: auto }
+#swipebox-top-bar table td:first-child { width: auto;  }
+#swipebox-top-bar table td:first-child + td { width: 120px; }
+
+#swipebox-top-bar table a {
+ color: #fff;
+ font-size: 12px;
+}
+
+#swipebox-top-bar table img {
+ /*display: table-cell;*/
+    width: 20px;
+}
 
 
 

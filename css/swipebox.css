@@ -311,7 +311,7 @@ html.swipebox-html.swipebox-touch {
 }
 
 
-.curatif [id$="-overlay"]  {   background-color: rgba(39, 178, 157, 0.93); }
+.curatif [id$="-overlay"]  {   background-color: rgba(151, 191, 13, 0.93); }
 .preventif [id$="-overlay"]   {  background-color: rgba(253, 154, 0, 0.93); }
 .services [id$="-overlay"] {  background-color: rgba(156, 96, 184, 0.93); }
 .produits [id$="-overlay"] {  background-color: rgba(65, 156, 201, 0.93); }
