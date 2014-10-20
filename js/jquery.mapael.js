@@ -385,12 +385,15 @@
 				}
 				, 120
 			);
-		}).on("mouseout", function(e) {
+		})
+
+		/*.on("mouseout", function(e) {
 			clearTimeout(tooltipTO);
 			$tooltip.css("display", "none");
 		}).on("mousemove", function(e) {
 			//$tooltip.css({"left" : Math.min(containerY2 - $tooltip.outerWidth() - 5, e.pageX + 12), "top" : e.pageY + 23 - $(window).scrollTop()});
-		});
+		}); */
+	
 	};
 	
 	/**
@@ -637,9 +640,12 @@
 			, outBehaviour = function () {clearTimeout(hoverTO);$.fn.mapael.elemOut(paper, mapElem, textElem);};
 			
 		$mapElem = $(mapElem.node);
+		
 		$mapElem.on("mouseover", overBehaviour);
 		$mapElem.on("mouseout", outBehaviour);
-		
+		/*$mapElem.on("click", outBehaviour);
+		$mapElem.on("click", overBehaviour);*/
+
 		if (textElem) {
 			$textElem = $(textElem.node);
 			$textElem.on("mouseover", overBehaviour);

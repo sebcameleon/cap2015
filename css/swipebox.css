@@ -38,6 +38,7 @@ html.swipebox-html.swipebox-touch {
   position: absolute;
   display: none;
   cursor: pointer;
+  padding-bottom: 100px;
 }
 #swipebox-slider .slide {
   height: 100%;

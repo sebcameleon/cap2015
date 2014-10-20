@@ -25,28 +25,79 @@
 
   
   <link rel="stylesheet" href="css/swipebox.css">
-  <link href="video-js/video-js.css" rel="stylesheet" type="text/css">
 
   <style type="text/css">
+
+
+a, a:hover { color:#fff;}
     
 .mapTooltip {
-  color: #fff;
-  max-width: 300px;
-  position: absolute;
-  right: 5%;
-  top: 30%;
-  z-index: 1000;
+    background: none repeat scroll 0 0 #fff;
+    top: 150px;
+    width: 250px;
+    z-index: 1000;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    right:0;
+    /* position: relative;
+    left:-80px;
+    float: right;*/
  }
 
-.map {
-  height: 450px;
+.mapTooltip h3, .mapTooltip .img-circle{
+    padding: 0;
+    margin: 0 0 10px 0;
+ }
+
+
+.mapTooltip:after {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-right-color: #fff;
+  border-width: 10px;
+  margin-top: -10px;
 }
 
-.areaLegend {
-    left: 10px;
+
+.mapTooltip, .mapTooltip a, .mapTooltip a:hover{
+    color: #556775;
+ }
+
+
+.map {
     position: absolute;
-    top: 300px;
+    left: 250px;
+    height: 550px;
+    text-align: left;
+    width: 750px;
 }
+
+
+.Legend {
+    display: block;
+    float: left;
+    left: 10px;
+    position: relative;
+    text-align: left;
+    top: 10px;
+}
+
+
+.Legend td {
+   font-size: 11px;
+   color: #fff;
+}
+
+
+
+
+
 /*
 .fondCarte {
     margin: auto;
@@ -73,6 +124,52 @@
 <body class="hommesBG">
 
 
+<div class="Legend">
+
+            <h3 style="color:#fcc866">Région 1</h3>
+            <table>
+              <tr><td><img src="img/trombi/G.LeMoing.jpg" width="50" class="img-circle"  /> </td>
+              <td>
+               <img src="img/mapUser.png"/> <span style="font-weight:bold; font-size:12px">M. Guy LEMOING</span><br/> 
+               &nbsp; &nbsp; &nbsp; DIRECTEUR REGIONAL DES VENTES<br/> 
+               <img src="img/mapMobile.png"/> 06 10 12 34 00<br/>
+               <img src="img/mapEmail.png"/> <a href="mailto:guy.lemoing@virbac.fr">guy.lemoing@virbac.fr</a>
+              </td>
+            </tr>
+            </table>
+
+            <br />
+
+
+          <h3 style="color:#c9e8f8">Région 2</h3>
+            <table>
+              <tr><td><img src="img/trombi/P.Maudet.jpg" width="50" class="img-circle"  /> </td>
+              <td>
+               <img src="img/mapUser.png"/> <span style="font-weight:bold; font-size:12px">M. Pierrick MAUDET</span><br/> 
+               &nbsp; &nbsp; &nbsp; DIRECTEUR REGIONAL DES VENTES<br/> 
+               <img src="img/mapMobile.png"/> 06 10 12 34 69<br/>
+               <img src="img/mapEmail.png"/> <a href="mailto:pierrick.maudet@virbac.fr">pierrick.maudet@virbac.fr</a>
+              </td>
+            </tr>
+            </table>
+
+            <br />
+
+          <h3 style="color:#aad3ac">Région 3</h3>
+            <table>
+              <tr><td><img src="img/trombi/M.Farouz.jpg" width="50" class="img-circle"  /> </td>
+              <td>
+               <img src="img/mapUser.png"/> <span style="font-weight:bold; font-size:12px">M. Marcel FAROUZ</span><br/> 
+               &nbsp; &nbsp; &nbsp; DIRECTEUR REGIONAL DES VENTES<br/> 
+               <img src="img/mapMobile.png"/> 06 10 12 34 17<br/>
+               <img src="img/mapEmail.png"/> <a href="mailto:marcel.farouz@virbac.fr">marcel.farouz@virbac.fr</a>
+              </td>
+            </tr>
+            </table>
+
+        </div>
+
+
 
         <div class="maparea4">
 
@@ -82,9 +179,13 @@
             <span>Alternative content for the map</span>
           </div>
 
-        <div class="areaLegend">
+<!--         <div class="areaLegend">
           <span>Alternative content for the legend</span>
-        </div>
+        </div> -->
+
+        
+
+
           
 
 
