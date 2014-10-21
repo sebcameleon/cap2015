@@ -216,26 +216,25 @@ article .img-circle {
 
 
 
-
-
-#swipebox-top-bar  table.reglementaire {
+.reglementaire {
   font-size: 14px;
   width: 100%;
 }
+
+.reglementaire > div {
+    float: right;
+    width: 120px;
+
+}
+
+
 
 #swipebox-top-bar table td { text-align: center; margin: auto }
 #swipebox-top-bar table td:first-child { width: auto;  }
 #swipebox-top-bar table td:first-child + td { width: 120px; }
 
-#swipebox-top-bar table a {
- color: #fff;
- font-size: 12px;
-}
 
-#swipebox-top-bar table img {
- /*display: table-cell;*/
-    width: 20px;
-}
+
 
 
 

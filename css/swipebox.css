@@ -93,6 +93,10 @@ html.swipebox-html.swipebox-touch {
   top: 0;
   left: 0;
 }
+#swipebox-slider .slide .swipebox-video-container .swipebox-video iframe#movieFrame {
+  height: 480px !important;
+  width: 854px !important;
+}
 
 #swipebox-slider .slide-loading {
   background: url(../img/swipebox/loader.gif) no-repeat center center;
@@ -125,7 +129,7 @@ html.swipebox-html.swipebox-touch {
   transform: translate3d(0, 50px, 0);*/
   -webkit-transform: translate3d(0, -110px, 0);
   transform: translate3d(0, -100px, 0);
-  z-index: 1000;
+  z-index: 100000;
 }
 
 #swipebox-title {
@@ -148,7 +152,7 @@ html.swipebox-html.swipebox-touch {
 #swipebox-prev,
 #swipebox-next {
   width: 100px;
-  height: 200%;
+  height: 200px;
   margin:20px;
 }
 
