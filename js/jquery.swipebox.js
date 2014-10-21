@@ -714,7 +714,7 @@
 
 				} else if (MovieUrl) {
 					// iframe = '<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="800" height="450" poster="' + url + '.jpg" data-setup="{\'autoplay\': false}"> <source src="' + url + '.mp4" type="video/mp4" /> <source src="' + url + '.webm" type="video/webm" />  <source src="' + url + '.ogv" type="video/ogg" /><p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>  </video>';
-					iframe = '<iframe id="movieFrame" width="1000" height="400" src="video.html" frameborder="0" allowfullscreen ALLOWTRANSPARENCY="true" scrolling="no"> </iframe>';
+					iframe = '<iframe id="movieFrame" width="1000" height="350" src="video.html" frameborder="0" allowfullscreen ALLOWTRANSPARENCY="true" scrolling="no"> </iframe>';
 				} else if (CartoUrl) {
 					iframe = '<iframe width="1000" height="500" src="' + url + '" frameborder="0" allowfullscreen ALLOWTRANSPARENCY="true" scrolling="no"> </iframe>';
 				} else {

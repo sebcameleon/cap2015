@@ -38,11 +38,13 @@ html.swipebox-html.swipebox-touch {
   position: absolute;
   display: none;
   cursor: pointer;
-  padding-bottom: 100px;
+  padding-bottom: 130px;
 }
 #swipebox-slider .slide {
   height: 100%;
   width: 100%;
+/*  width: 80%;
+  margin: 0 10%;*/
   line-height: 1px;
   text-align: center;
   display: inline-block;
@@ -54,35 +56,29 @@ html.swipebox-html.swipebox-touch {
   width: 1px;
   margin-right: -1px;
 }
-#swipebox-slider .slide img, #swipebox-slider .slide .swipebox-video-container  {
+#swipebox-slider .slide > img{
   display: inline-block;
   max-height: 100%;
   max-width: 100%;
   margin: 0;
-  padding: 0 0 70px;
-  width: auto;
-  height: auto;
-  vertical-align: middle;
-}
-#swipebox-slider .slide img, #swipebox-slider .slide .swipebox-video-container {
-  display: inline-block;
-  max-height: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
+  padding: 0 100px;
+  /*padding: 0 0 70px;*/
   width: auto;
   height: auto;
   vertical-align: middle;
 }
 #swipebox-slider .slide .swipebox-video-container {
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
   background: none;
   max-width: 1140px;
   max-height: 100%;
   width: 100%;
   padding: 5%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  margin: 0;
 }
+
 #swipebox-slider .slide .swipebox-video-container .swipebox-video {
   width: 100%;
   height: 0;
@@ -97,13 +93,6 @@ html.swipebox-html.swipebox-touch {
   top: 0;
   left: 0;
 }
-
-
-#swipebox-slider .slide .swipebox-video-container .swipebox-video iframe#movieFrame {
- width: 800px;
- height: 450px;
-}
-
 
 #swipebox-slider .slide-loading {
   background: url(../img/swipebox/loader.gif) no-repeat center center;
@@ -125,6 +114,7 @@ html.swipebox-html.swipebox-touch {
   transform: translate3d(0, -50px, 0);*/
   position: absolute;
   height: 100%;
+  display: table;
 }
 
 #swipebox-top-bar, #video-top-bar {
@@ -134,7 +124,7 @@ html.swipebox-html.swipebox-touch {
   /*-webkit-transform: translate3d(0, 50px, 0);
   transform: translate3d(0, 50px, 0);*/
   -webkit-transform: translate3d(0, -110px, 0);
-  transform: translate3d(0, -110px, 0);
+  transform: translate3d(0, -100px, 0);
   z-index: 1000;
 }
 
@@ -158,7 +148,7 @@ html.swipebox-html.swipebox-touch {
 #swipebox-prev,
 #swipebox-next {
   width: 100px;
-  height: 100%;
+  height: 200%;
   margin:20px;
 }
 
@@ -168,10 +158,10 @@ html.swipebox-html.swipebox-touch {
 }
 
 #swipebox-arrows {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  height: 50px;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
 }
 
 #swipebox-prev {
@@ -299,12 +289,7 @@ html.swipebox-html.swipebox-touch {
     right: 10px;
   }
 
-  #swipebox-arrows {
-    width: 100%;
-    height: 100%
-    /*width: 92%;
-    max-width: 800px;*/
-  }
+ 
 }
 /* Skin 
 --------------------------*/
@@ -346,4 +331,25 @@ html.swipebox-html.swipebox-touch {
 
 #swipebox-top-bar img, #video-top-bar img {
 max-width: 30px;
+}
+
+
+
+
+
+@media (max-width: 780px) {
+
+#swipebox-slider .slide > img{
+  padding: 0;
+}
+
+
+#swipebox-bottom-bar.visible-bars {
+    height: 100px;
+    position: absolute;
+    bottom: 100px;
+    z-index: 100;
+}
+
+
 }
