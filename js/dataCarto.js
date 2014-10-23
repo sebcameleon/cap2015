@@ -99,7 +99,7 @@ $(function(){
  "R07":{ 
  value: "2", 
  href : "#", 
- tooltip: {content : "<h3>Secteur R07</h3> <img class=\"img-circle\" width=\"70px\" src=\"img/trombi/M.bethembos.jpg \"> <br/><img src=\"img/mapUser.png\"/> <span style=\"font-weight:bold;\"> M. Maxime BETHEMBOS </span><br/> <img src=\"img/mapMobile.png\"/> 06 10 12 41 74 <br/> <img src=\"img/mapEmail.png\"/> <a href=\"mailto:maxime.bethembos@virbac.fr\"> maxime.bethembos@virbac.fr </a> "} 
+ tooltip: {content : "<h3>Secteur R07</h3> <img class=\"img-circle\" width=\"70px\" src=\"img/trombi/M.Bethembos.jpg \"> <br/><img src=\"img/mapUser.png\"/> <span style=\"font-weight:bold;\"> M. Maxime BETHEMBOS </span><br/> <img src=\"img/mapMobile.png\"/> 06 10 12 41 74 <br/> <img src=\"img/mapEmail.png\"/> <a href=\"mailto:maxime.bethembos@virbac.fr\"> maxime.bethembos@virbac.fr </a> "} 
  }, 
  
  

@@ -52,7 +52,18 @@
 <body style="background-color:#000">
   
  
-<a id="#VIRBAMEC" href='mentionsLegales.html#VIRBAMEC' target='_parent'><img src='img/mentionsLegales.png'><p>Mentions légales</p>
+<!-- <a id="#VIRBAMEC" href='mentionsLegales.html#VIRBAMEC' target='_blank'><img src='img/mentionsLegales.png'><p>Mentions légales</p> -->
+<a href="#" onclick="popUpMention('mentionsLegales.html#VIRBAMEC')"><img src='img/mentionsLegales.png'> <p>Mentions légales</p></a>
+
+
+<script>
+function popUpMention(url) {
+  var myWindow = window.open(url, "", "width=900, height=700");
+  /*var win = window.open(url, '_blank');
+  win.focus();*/
+}
+</script>
+
 
 
 </body>

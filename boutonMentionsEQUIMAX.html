@@ -52,8 +52,17 @@
 <body style="background-color:#000">
   
 
-<a id="EQUIMAX" href='mentionsLegales.html#EQUIMAX' target='_parent'><img src='img/mentionsLegales.png'><p>Mentions légales</p></a>
+<!-- <a id="EQUIMAX" href='mentionsLegales.html#EQUIMAX' target='_blank'><img src='img/mentionsLegales.png'><p>Mentions légales</p></a>-->
+<a href="#" onclick="popUpMention('mentionsLegales.html#EQUIMAX')"><img src='img/mentionsLegales.png'> <p>Mentions légales</p></a>
 
+
+<script>
+function popUpMention(url) {
+  var myWindow = window.open(url, "", "width=900, height=700");
+  /*var win = window.open(url, '_blank');
+  win.focus();*/
+}
+</script>
 
 
 </body>
