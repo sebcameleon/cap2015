@@ -58,7 +58,31 @@
               <li class="produitsItem"><a href="produits.html"><i> </i>les produits</a></li>
               <li class="hommesItem active"><a href="lesHommes.html"><i> </i>les hommes</a></li>
               -->
-              <A href="javascript:self.close('CAP 2015 - Virbac');" id="swipebox-close">  </a>
+
+
+
+
+               <script type="text/javascript">
+
+                
+                function fermerMentionsIpad() {
+                 //alert("tot");
+                 self.close("CAP 2015 - Virbac");
+                 history.go(-1);
+                }
+                
+
+                document.write("<A href='javascript: fermerMentionsIpad();' id='swipebox-close'> </a>")
+                //document.write("<A href='javascript: history.go(-1);' id='swipebox-close'> </a>")
+
+/*                if (navigator.userAgent.match(/iPad/i) != null)
+                  //document.write("<A href='javascript: fermerMentionsIpad();' id='swipebox-close'> </a>")
+                  document.write("<A href='javascript: history.go(-1);' id='swipebox-close'> </a>")
+                else
+                  document.write("<A href='javascript:self.close(\"CAP 2015 - Virbac\");' id='swipebox-close'>  </a>")
+*/
+              </script>
+
         </ul>
       </nav>
 

@@ -113,7 +113,7 @@ $(function(){
  "R09":{ 
  value: "2", 
  href : "#", 
- tooltip: {content : "<h3>Secteur R09</h3> <img class=\"img-circle\" width=\"70px\" src=\"img/trombi/M.Allioux.jpg \"> <br/><img src=\"img/mapUser.png\"/> <span style=\"font-weight:bold;\"> Mlle Marion ALLIOUX </span><br/> <img src=\"img/mapMobile.png\"/> 06 10 12 42 42 <br/> <img src=\"img/mapEmail.png\"/> <a href=\"mailto:marion.allioux@virbac.fr\"> marion.allioux@virbac.fr </a> "} 
+ tooltip: {content : "<h3>Secteur R09</h3> <img class=\"img-circle\" width=\"70px\" src=\"img/trombi/P.Maudet.jpg \"> <br/><img src=\"img/mapUser.png\"/> <span style=\"font-weight:bold;\"> M. Pierrick MAUDET </span><br/> <img src=\"img/mapMobile.png\"/> 06 10 12 34 69 <br/> <img src=\"img/mapEmail.png\"/> <a href=\"mailto:pierrick.maudet@virbac.fr\"> pierrick.maudet@virbac.fr </a> "} 
  }, 
  
  
